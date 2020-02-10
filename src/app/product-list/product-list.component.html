@@ -1,0 +1,25 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+
+  <h3>
+      <!-- [..] is Property binding-->
+    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="product.description">
+      <!-- {{}} is interpolation -->
+    Description: {{ product.description }} 
+  </p>
+
+  <!-- () is event bindint -->
+  <button (click)="shareProduct()">
+    Share
+  </button>
+  
+  <app-product-alerts [product]="product" (notify)="onNotify()">
+  </app-product-alerts>
+
+</div>  
