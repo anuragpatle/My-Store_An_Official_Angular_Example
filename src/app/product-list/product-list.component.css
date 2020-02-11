@@ -1,7 +1,14 @@
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
+h2{
+    background-color: #f2f2f2;
+    padding: 8px 0;
+    color: #1976D2;
+  }
+  
+  p:hover{
+  cursor: pointer;
+  }
+  
+  .price{
+    font-weight:700;
+    margin-top: -20px;
+  }

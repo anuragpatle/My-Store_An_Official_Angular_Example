@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { products } from '../products';
+import { faFacebookF, faTwitterSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-product-list',
@@ -10,6 +11,10 @@ import { products } from '../products';
 
 export class ProductListComponent {
   products = products;
+
+  faFacebookF = faFacebookF;
+  faTwitterSquare = faTwitterSquare;
+  faInstagram = faInstagram;
 
   shareProduct() {
     window.alert('The product has been shared!');

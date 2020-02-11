@@ -19,7 +19,6 @@
             </a>
         </h3>
 
-
         <p class="price">{{ product.price | currency }}</p>
 
 
@@ -29,14 +28,15 @@
             </p>
 
 
-            <p *ngIf="product.description">
-                <!-- {{}} is interpolation -->
-                Description: {{ product.description }}
-            </p>
-
             <!-- () is event bindint -->
             <button class="btn btn-primary btn-sm mr-2" (click)="shareProduct()">
-                Share
+                <fa-icon [icon]="faFacebookF"></fa-icon>
+            </button>
+            <button class="btn btn-primary btn-sm mr-2" (click)="shareProduct()">
+                <fa-icon [icon]="faTwitterSquare"></fa-icon>
+            </button>
+            <button class="btn btn-primary btn-sm" (click)="shareProduct()">
+                <fa-icon [icon]="faInstagram"></fa-icon>
             </button>
 
             <button class="btn btn-info ml-5 " (click)="addToCart(product)">
@@ -44,9 +44,9 @@
             </button>
         </div>
 
-        <app-product-alerts  [product]="product" (notify)="onNotify()">
+        <app-product-alerts [product]="product" (notify)="onNotify()">
         </app-product-alerts>
-
+        <hr>
     </div>
 
 </div>
