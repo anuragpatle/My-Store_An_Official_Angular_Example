@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 import { products } from '../products';
 import { faFacebookF, faTwitterSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {CartService} from '../cart.service'
 
 @Component({
   selector: 'app-product-list',
@@ -16,19 +17,21 @@ export class ProductListComponent {
   faTwitterSquare = faTwitterSquare;
   faInstagram = faInstagram;
 
+  constructor(private cartService: CartService) {}
+
   shareProduct() {
     window.alert('The product has been shared!');
   }
+
+
 
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
 
+  addToCart(product) {
+    window.alert('Your product has been added to the cart!');
+    this.cartService.addToCart(product);
+  }
+
 }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

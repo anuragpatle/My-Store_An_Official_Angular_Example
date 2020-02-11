@@ -12,6 +12,7 @@ import { CartComponent } from './cart/cart.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BackbtnComponent } from './backbtn/backbtn.component';
 
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -32,13 +33,7 @@ import { BackbtnComponent } from './backbtn/backbtn.component';
     CartComponent,
     BackbtnComponent
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  exports: [RouterModule]
 })
-export class AppModule { }
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
+export class AppRoutingModule { }
