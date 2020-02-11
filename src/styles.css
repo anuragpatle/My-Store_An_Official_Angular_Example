@@ -1,4 +1,9 @@
 /* Global Styles */
+/* Add application styles & imports to this file! */
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* @import url("../node_modules/font-awesome/css/font-awesome.css"); */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
 
 * {
   font-family: 'Roboto', Arial, sans-serif;
@@ -138,8 +143,3 @@ app-top-bar h1 {
 }
 
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
