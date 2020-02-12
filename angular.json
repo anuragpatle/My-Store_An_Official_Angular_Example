@@ -121,7 +121,7 @@
       }
     }
   },
-  "defaultProject": "angular-example-with-routing",
+  "defaultProject": "angular.io-example",
   "cli": {
     "analytics": false
   }
