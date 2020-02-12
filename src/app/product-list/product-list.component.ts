@@ -25,6 +25,7 @@ export class ProductListComponent {
 
 
 
+  /* When will click notify, this method will get called. */
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }

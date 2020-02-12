@@ -44,8 +44,19 @@
             </button>
         </div>
 
+
+        <!--
+            This notify is mapped with ProductAlertsComponent.
+            This is the parent. 
+            This will pass 'product' object to the child.
+
+            <app-product-alerts> tag will get replaced by the child element i.e. product-alert.component's tag.
+        -->
         <app-product-alerts [product]="product" (notify)="onNotify()">
+
         </app-product-alerts>
+        
+        
         <hr>
     </div>
 
