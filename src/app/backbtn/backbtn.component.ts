@@ -10,7 +10,8 @@ export class BackbtnComponent implements OnInit {
   faLongArrowAltLeft = faLongArrowAltLeft;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    
   }
 
 }
