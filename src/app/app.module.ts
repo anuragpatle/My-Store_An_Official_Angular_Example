@@ -13,6 +13,8 @@ import { BackbtnComponent } from './backbtn/backbtn.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { AdminModule } from './admin/admin.module';
+
 
 @NgModule({
   imports: [
@@ -21,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
     ReactiveFormsModule,
     FontAwesomeModule,
     HttpClientModule,
+    AdminModule,
   ],
   declarations: [
     AppComponent,
